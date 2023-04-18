@@ -45,6 +45,11 @@ router.get('/reading-history/teams.json', async (req, res) => {
   res.json(results)
 })
 
+router.get("/reading-history/test.json", (req, res) => {
+  const results = {user:'test'};
+  res.json(results);
+});
+
 module.exports = {
   middleware: router
 }

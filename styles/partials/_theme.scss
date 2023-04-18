@@ -3,7 +3,7 @@
 // Font imports
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
 
-$font-branding: 'Alfa Slab One', cursive;
+$font-branding: 'Alfa Slab One', sans-serif;
 $font-headline: 'Open Sans', sans-serif;
 $font-sans: 'Open Sans', sans-serif;
 
@@ -19,10 +19,11 @@ $main-page-btn-color: $gray-45;
 $search-container-background: #e6e2e2;
 $search-container-hover: $gray-70;
 $btn-homepage-background: $white;
-$btn-homepage-border: $black;
+$btn-homepage-border:  #c4c4c4;
+$btn-border-radius: 10px;
 $btn-default-background: $white;
 $btn-default-background-hover: $accent;
-$btn-default-border: $black;
+$btn-default-border: #c4c4c4;
 $btn-default-text-color: $black;
 $btn-default-text-hover: $black;
 $btn-user-initial: $gray-50;

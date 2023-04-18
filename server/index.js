@@ -61,8 +61,8 @@ app.get(formatUrl('/view-on-site/:docId'), (req, res, next) => {
 })
 
 // main pages
-app.use(readingHistory.middleware)
-
+app.use(readingHistory.middleware);
+//app.use(formatUrl("/"), readingHistory);
 // don't cache pages client-side to ensure browser always gets latest revision
 app.use((req, res, next) => {
   res.set('Cache-Control', 'no-cache')

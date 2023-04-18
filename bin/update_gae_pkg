@@ -14,11 +14,13 @@ try {
 // load the normal pkg json
 const pkg = require(pkgPath)
 
-const {dotenv} = pkg.devDependencies
+// moved all devDependencies to production
+//const {dotenv} = pkg.devDependencies
 
 // update the start config to use .env, add as normal dep
 pkg.scripts.start = `node -r dotenv/config server/index`
-pkg.dependencies = Object.assign({}, pkg.dependencies, {dotenv}, customPkg.dependencies)
+// no longer needed as moved to production
+//pkg.dependencies = Object.assign({}, pkg.dependencies, {dotenv}, customPkg.dependencies)
 
 // write the updates package.json to disk
 fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 4))
